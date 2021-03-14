@@ -1,0 +1,58 @@
+#heading{
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+
+}
+.chooseLanguage{
+    position: absolute;
+    left:80px;
+    top:70px;
+}
+#inputBox{
+         
+    position: absolute;
+    height: 80px;
+    width: 300px;
+    right:500px;
+    top:120px;
+
+}
+#resultBox{
+    position: absolute;
+    height: 80px;
+    width: 300px;
+    right:500px;
+    top:300px;
+
+}
+#detailBox{
+    position: absolute;
+    height: 80px;
+    width: 300px;
+    right:500px;
+    top:480px;
+
+}
+
+#editor { 
+    position: absolute;
+   left: 80px;
+   top:100px;
+    width: 600px;
+    height: 600px;
+}
+
+
+#submit{
+    position: absolute;
+    bottom: 58px;
+    left:80px;
+
+    }
+
+ #result{
+     font-size: larger;
+     font-family: cursive;
+
+ }   

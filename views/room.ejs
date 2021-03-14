@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="room.css">
+
+<title>Code editor</title>
+
+<script>
+    const ROOM_ID = "<%= roomId%>"
+</script>
+
+
+</head>
+<body>
+<div id="heading">
+    Compiler
+</div>
+
+
+    <div class="chooseLanguage" >
+  
+  <select class="form-select" id="language" aria-label="C++14" onchange="languageChange()">
+    <option  ><a href="#">C++14</a></option>
+    <option ><a href="#">Java</a></option>
+    <option ><a href="#">C++17</a></option>
+    <option ><a href="#">Python3</a></option>
+    <option ><a href="#">C</a></option>
+    
+  </select>
+</div>
+
+
+<div id="editor">
+    Hello world
+</div>
+
+
+
+<button id="submit" class="btn btn-primary" >Submit</button>
+
+<div class="form-group" id="inputBox">
+    <label for="exampleFormControlTextarea1">Input</label>
+    <textarea class="form-control" id="input" rows="3" onChange="inputChange()"></textarea>
+</div>
+
+<div class="form-group" id="resultBox">
+    <label for="exampleFormControlTextarea1">Output</label>
+    <textarea class="form-control" id="result" rows="3" readonly></textarea>
+</div>
+
+<div class="form-group" id="detailBox">
+    <label for="exampleFormControlTextarea1">Details</label>
+    <textarea class="form-control" id="details" rows="3" readonly></textarea>
+</div>
+
+    
+
+
+<script src="/socket.io/socket.io.js" defer></script>
+<script src="script.js" defer ></script>   
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+ <script>
+    
+     var editor = ace.edit("editor");
+          editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
+      
+ </script>
+</body>
+</html>
