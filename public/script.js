@@ -180,3 +180,5 @@ function transmitCode(){
     socket.emit('editor-change',{text : editor.getValue()})
 }
 
+{}
+  

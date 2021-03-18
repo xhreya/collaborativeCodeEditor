@@ -31,16 +31,33 @@ var program = {
 // });
 
 app.set('view engine','ejs');
+//app.use("/public", express.static('public'));
 
-app.use(express.static('public'))
+app.use(express.static(__dirname+"/public"));
+
+// app.get('/',(req,res)=>{
+//     res.redirect(`/${uuidV4()}`)
+// })
+
+// app.get('/:room',(req,res)=>{
+//     res.render('front',{roomId:req.params.room})
+// })
 
 app.get('/',(req,res)=>{
-    res.redirect(`/${uuidV4()}`)
+    res.redirect(`/${uuidV4()}/interviewer`)
 })
 
 app.get('/:room',(req,res)=>{
-    res.render('room',{roomId:req.params.room})
+    res.redirect(`/${req.params.room}/candidate`);
 })
+
+app.get('/:room/interviewer',(req,res)=>{
+    res.render('front',{roomId:req.params.room, user:'Interviewer'});
+
+})
+app.get('/:room/candidate',(req,res)=>{
+    res.render('front',{roomId:req.params.room,user:'Candidate'})
+});
 
 
 io.on('connection',socket=>{

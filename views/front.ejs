@@ -1,0 +1,71 @@
+<%- include('header.ejs') %>
+<div class="header">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CodeEditor</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#" id='user'>
+        <%=user %>
+      </a></li>
+             
+
+    </ul>
+  </div>
+</nav>
+</div>
+
+<div class="container-fluid" id ="smallHeader">
+<div class="row container-fluid" >
+    <div class="col-sm-3" style="background-color:gray; height: 100%;">
+      
+        <%- include('question.ejs') %>
+      
+    </div>
+    <div class="col-sm-6" style="background-color:darkslategray;">
+    
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#compiler">Compiler</a></li>
+                <li><a data-toggle="tab" href="#whiteboard">Whiteboard</a></li>
+                </ul>
+              
+                
+            
+            
+            <div class="tab-content">
+                <div id="compiler" class="tab-pane fade in active">
+                  
+                    <%- include('compiler.ejs') %>
+                
+                </div>
+                <div id="whiteboard" class="tab-pane fade">
+                
+                    <%- include('whiteboard.ejs') %>
+                
+                  
+                </div>
+                
+              </div> 
+
+
+
+
+        </div>
+    </div>
+
+    <div class="col-sm-3" style="background-color:cadetblue;">
+       Video and audio chats.    
+    
+    
+    
+    </div>
+    
+
+
+ </div>   
+</div>
+
+
+<%- include('footer.ejs') %>

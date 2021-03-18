@@ -9,29 +9,50 @@
     left:80px;
     top:70px;
 }
+.question{
+
+    height: 100%;
+}
+
+
+#topheader{
+    position: absolute;
+    left:300px;
+    top:10px;
+
+}
+
+#smallHeader{
+    position: absolute;
+    top:100px;
+    width: 100%;
+    height: 100%;
+    
+}
+
 #inputBox{
          
     position: absolute;
     height: 80px;
     width: 300px;
-    right:500px;
-    top:120px;
+    right:372px;
+    top:730px;
 
 }
 #resultBox{
     position: absolute;
     height: 80px;
     width: 300px;
-    right:500px;
-    top:300px;
+    right:372px;
+    top:830px;
 
 }
 #detailBox{
     position: absolute;
     height: 80px;
     width: 300px;
-    right:500px;
-    top:480px;
+    right:372px;
+    top:950px;
 
 }
 
@@ -46,9 +67,8 @@
 
 #submit{
     position: absolute;
-    bottom: 58px;
-    left:80px;
-
+    left:610px;
+      top:700px;
     }
 
  #result{

@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-     <link rel="stylesheet" href="room.css">
+  
 
-<title>Code editor</title>
-
-<script>
-    const ROOM_ID = "<%= roomId%>"
-</script>
-
-
-</head>
-<body>
-<div id="heading">
-    Compiler
-</div>
 
 
     <div class="chooseLanguage" >
@@ -64,7 +43,7 @@
 
 
 <script src="/socket.io/socket.io.js" defer></script>
-<script src="script.js" defer ></script>   
+<script src="/script.js" type="text/javascript" defer ></script>   
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
@@ -75,5 +54,9 @@
     editor.session.setMode("ace/mode/javascript");
       
  </script>
-</body>
-</html>
+
+
+
+
+
+
